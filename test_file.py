@@ -1,2 +1,3 @@
 import numpy as np
-print(np.sqrt(4))
+val = np.sqrt(4)
+print(val)
