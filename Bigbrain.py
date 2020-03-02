@@ -18,20 +18,17 @@ for delta in np.arange(del_0, max_del, 0.00001):
 
     #Beta
     error_beta = 10
-    beta_max = 3.0
+    beta_max = np.pi/2
     beta_min = 0.0
-    while abs(error_beta) > 0.01:
+    while abs(error_beta) > 0.0001:
         beta = (beta_max + beta_min)/2
-        error_beta = ((M1**2 * (np.sin(beta))**2 - 1) * sp.cot(beta)) / (((gamma+1)/2) * M1**2 - M1**2 * (np.sin(beta))**2 + 1)
+        error_beta = ((M1**2 * (np.sin(beta))**2 - 1) * sp.cot(beta)) / (((gamma+1)/2) * M1**2 - M1**2 * (np.sin(beta))**2 + 1) - np.tan(delta)
 
         if error_beta > 0:
             beta_max = beta
         else:
             beta_min = beta
- #       for beta in np.arange(0.0,2.0,0.00001):
- #           error_beta = ((M1**2 * (np.sin(beta))**2 - 1) * sp.cot(beta)) / (((gamma+1)/2) * M1**2 - M1**2 * (np.sin(beta))**2 + 1)
- #           print(beta)
-        print(error_beta)
+    print('Beta = ' + str(beta*180/np.pi))
 
     #Normal Mach
     Mn1 = M1 * np.sin(beta)
