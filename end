@@ -1,0 +1,68 @@
+[33mcommit 46b8465d4f107818e2a030e92cd02da7e3a41cc5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Tue Mar 3 20:53:16 2020 -0600
+
+    fixed delta iterations
+
+[33mcommit 67b95809af5d0c21998f5062b57b730b0cad5b35[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Mon Mar 2 12:48:05 2020 -0600
+
+    _
+
+[33mcommit 2d124837621ab8fb60932f0045fc45ecf3d04d22[m
+Merge: b1b3c3e 1937bcf
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Mon Mar 2 12:41:56 2020 -0600
+
+    Merge pull request #2 from jkloser/beta_test
+    
+    Confirmed betas
+
+[33mcommit 1937bcff80e5f8258948fb883e10993a9934ea13[m[33m ([m[1;31morigin/beta_test[m[33m)[m
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Mon Mar 2 12:36:18 2020 -0600
+
+    Confirmed betas
+
+[33mcommit b1b3c3ea4ef4e91fe019bc4eb0d4fb5e55954e99[m
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Sun Mar 1 22:49:19 2020 -0600
+
+    Improved Beta Iteration
+
+[33mcommit d20c849f5bb6c5eb3c0d36f2da0fbf74c3dcc8e8[m
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Sat Feb 29 22:02:59 2020 -0600
+
+    'Code'
+
+[33mcommit 664026e8e48b44c056587ba4220f998e08adf263[m
+Author: Max Strehle <max-aero120@users.noreply.github.com>
+Date:   Sat Feb 29 20:03:03 2020 -0600
+
+    Add files via upload
+
+[33mcommit 4e18514ee742613f1b3c1065d437ef93aa3fd8a1[m
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Tue Feb 25 22:57:52 2020 -0600
+
+    test
+
+[33mcommit 33b693bef598070ab09787b141de7ded36a36293[m
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Tue Feb 25 20:47:46 2020 -0600
+
+    test
+
+[33mcommit 08add16540b2a602abfa0d48239140da9f18cde9[m
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Tue Feb 25 20:09:38 2020 -0600
+
+    Update README.md
+
+[33mcommit ce0049f4da1cb3174d58a5be131beec9cfa6d24d[m
+Author: jkloser <john.kloser3@gmail.com>
+Date:   Tue Feb 25 20:05:11 2020 -0600
+
+    first commit

@@ -13,14 +13,14 @@ gamma = 1.4
 
 P01 = (1/0.02722) * P1
 max_del = 0.9*(M1 - 1)**(3/2)
-del_0 = 0
-for delta in np.arange(del_0, 45*np.pi/180, 0.0001):
+del_0 = 29.4*np.pi/180
+for delta in np.arange(del_0, 45*np.pi/180, 0.000001):
 
     #Beta
     error_beta = 10
     beta_max = np.pi/2
     beta_min = 0.0
-    while abs(error_beta) > 0.001:
+    while abs(error_beta) > 0.01:
         beta = (beta_max + beta_min)/2
         error_beta = ((M1**2 * (np.sin(beta))**2 - 1) * sp.cot(beta)) / (((gamma+1)/2) * M1**2 - M1**2 * (np.sin(beta))**2 + 1) - np.tan(delta)
 
@@ -28,7 +28,7 @@ for delta in np.arange(del_0, 45*np.pi/180, 0.0001):
             beta_max = beta
         else:
             beta_min = beta
-    print('Beta = ' + str(beta*180/np.pi))
+    print('delta = ' + str(delta*180/np.pi))
 
     #Normal Mach
     Mn1 = M1 * np.sin(beta)
@@ -61,9 +61,12 @@ for delta in np.arange(del_0, 45*np.pi/180, 0.0001):
         M3 = M3 - f/df
     P3_ratio = (1+(gamma-1)*M3**2/2)**(gamma/(gamma-1)) #P03/P3
     P3_guess = (1/P3_ratio)*P02 #P02 = P03
-    if abs(P3-P3_guess) < 0.01:
-        print(M3)
-        print(delta)
+    if abs(P3-P3_guess) < 0.0001:
+        print('Pressures are equal motherfucker')
         break
+    else:
+        print('Pressures not equal')
 print (M3)
-print(delta)
+print(delta*180/np.pi)
+print(P3_guess)
+print(P3_ratio)
