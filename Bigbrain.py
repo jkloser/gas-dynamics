@@ -13,7 +13,7 @@ gamma = 1.4
 
 P01 = (1/0.02722) * P1
 max_del = 0.9*(M1 - 1)**(3/2)
-del_0 = 29.4*np.pi/180
+del_0 = 29.7*np.pi/180
 for delta in np.arange(del_0, 45*np.pi/180, 0.000001):
 
     #Beta
@@ -61,12 +61,16 @@ for delta in np.arange(del_0, 45*np.pi/180, 0.000001):
         M3 = M3 - f/df
     P3_ratio = (1+(gamma-1)*M3**2/2)**(gamma/(gamma-1)) #P03/P3
     P3_guess = (1/P3_ratio)*P02 #P02 = P03
-    if abs(P3-P3_guess) < 0.0001:
+    if abs(P3-P3_guess) < 0.00001:
         print('Pressures are equal motherfucker')
         break
     else:
         print('Pressures not equal')
-print (M3)
-print(delta*180/np.pi)
-print(P3_guess)
+print('M2 = ' + str(M2))
+print ('M3 = ' + str(M3))
+print('delta = ' + str(delta*180/np.pi))
+print('beta = ' + str(beta*180/np.pi))
+#p2/p1
+#p3/p2
+print('P3 = ' + str(P3_guess))
 print(P3_ratio)
